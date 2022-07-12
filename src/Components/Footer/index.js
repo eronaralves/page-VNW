@@ -22,11 +22,15 @@ export default function Footer() {
           <Contact>
             <p>Siga nossas redes sociais e fique conectado com todas as novidades.</p>
             <div>
-              <AiFillFacebook color="#0166E1"/>
-              <AiOutlineInstagram color="#8433B7"/>
-              <AiFillLinkedin color="#006397"/>
-              <AiOutlineMedium color="#110F0E"/>
-              <AiFillYoutube color="#E81918"/>
+              <a href="https://www.facebook.com/vainaweb" target="_blank"><AiFillFacebook color="#0166E1"/></a>
+
+              <a href="https://www.instagram.com/vainaweb/" target="_blank"><AiOutlineInstagram color="#8433B7"/></a>
+
+              <a href="https://br.linkedin.com/company/vainaweb" target="_blank"><AiFillLinkedin color="#006397"/></a>
+
+              <a href="https://medium.com/@olavainaweb" target="_blank"><AiOutlineMedium color="#110F0E"/></a>
+
+              <a href="/"><AiFillYoutube color="#E81918"/></a>
             </div>
           </Contact>
         </BoxContact>
