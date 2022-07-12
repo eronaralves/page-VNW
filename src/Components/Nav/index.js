@@ -15,7 +15,7 @@ import {IoMenu} from "react-icons/io5"
 import {AiOutlineClose} from "react-icons/ai"
 
 // Images
-import LogoVNW from "../../assets/logo-vnw.png"
+import LogoVNW from "../../assets/images/logo-vnw.png"
 
 export default function Nav() {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)

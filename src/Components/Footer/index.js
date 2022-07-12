@@ -1,12 +1,12 @@
 import React from "react";
-import {Content} from "../../global"
+import {Content} from "../../styles/global"
 
 // icons Contact
-import Facebook from "../../assets/facebook.svg"
-import Linkedin from "../../assets/linkedin.svg"
-import Instagram from "../../assets/instagram.svg"
-import Youtube from "../../assets/youtube.svg"
-import Medium from "../../assets/medium.svg"
+import Facebook from "../../assets/images/facebook.svg"
+import Linkedin from "../../assets/images/linkedin.svg"
+import Instagram from "../../assets/images/instagram.svg"
+import Youtube from "../../assets/images/youtube.svg"
+import Medium from "../../assets/images/medium.svg"
 
 
 // Styles

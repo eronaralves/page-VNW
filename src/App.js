@@ -5,14 +5,11 @@ import {
   Route
 } from "react-router-dom"
 
-// Components
-import Nav from "./Components/Nav";
-
 // Pages
 import Home from "./pages/home";
 
 // Styles
-import {GlobalStyle, Container} from "./global"
+import {GlobalStyle, Container} from "./styles/global"
 
 export default function App() {
   return (

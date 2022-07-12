@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Images
-import BackgroundFooter from "../../assets/background-footer.png"
+import BackgroundFooter from "../../assets/images/background-footer.png"
 
 export const ContainerFooter = styled.footer`
   width: 100%;

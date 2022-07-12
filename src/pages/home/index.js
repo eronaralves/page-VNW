@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TeamData } from "../../ultis";
-import { Content} from "../../global"
+import { Content } from "../../styles/global"
 
 // Styles
 import {
@@ -30,11 +30,11 @@ import Team from "../../Components/Team"
 import Footer from "../../Components/Footer";
 
 // Images
-import LogoVNW from "../../assets/logo-vnw.png"
-import CodePage from "../../assets/code-page.png"
-import IconComputer from "../../assets/icon.computer.svg"
-import IconSearch from "../../assets/icon-search.svg"
-import CallMeet from "../../assets/call-meet.png"
+import LogoVNW from "../../assets/images/logo-vnw.png"
+import CodePage from "../../assets/images/code-page.png"
+import IconComputer from "../../assets/images/icon.computer.svg"
+import IconSearch from "../../assets/images/icon-search.svg"
+import CallMeet from "../../assets/images/call-meet.png"
 
 
 export default function Home() {
