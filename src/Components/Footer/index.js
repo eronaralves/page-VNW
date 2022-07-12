@@ -20,7 +20,7 @@ import {
 export default function Footer() {
 
   return (
-    <ContainerFooter>
+    <ContainerFooter id="footer">
       <Content>
         <BoxContact>
           <h2>Contato</h2>

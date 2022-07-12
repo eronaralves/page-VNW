@@ -103,6 +103,8 @@ export const ContainerFormation = styled.section`
   display: flex;
   align-items: center;
 
+  margin-top: 50px;
+
 `
 
 export const ContentFormation = styled.div`

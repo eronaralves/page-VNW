@@ -50,11 +50,11 @@ export default function Home() {
       </Header>
 
       <Content>
-        <ContainerAbout>
+        <ContainerAbout id="about">
           <BoxLogo>
             <img src={LogoVNW} alt="Logo Vai na Web" />
           </BoxLogo>
-          <ContentAbout>
+          <ContentAbout id="sobre">
             <h2>Sobre o Vai na Web</h2>
             <TextAbout>
               <p>Fundado em 2017, no Complexo do Alemão, o Vai na Web vem impactando e transformando a vida de jovens das classes C, D e E do Rio de Janeiro e de outros 18 estados do Brasil.</p>
@@ -66,7 +66,7 @@ export default function Home() {
           </ContentAbout>
         </ContainerAbout>
 
-        <ContainerFormation>
+        <ContainerFormation id="formations">
           <ContentFormation>
             <TextFormation>
               <h2>Formação</h2>
@@ -80,7 +80,7 @@ export default function Home() {
           </ContentFormation>
         </ContainerFormation>
 
-        <ContainerTeam>
+        <ContainerTeam id="teams">
           <h2>Equipe</h2>
           <ContainerBackgroundInput>
             <BoxInput>
@@ -96,7 +96,7 @@ export default function Home() {
           </TeamPhotos>
         </ContainerTeam>
 
-        <ContainerEvents>
+        <ContainerEvents id="events">
           <h2>Eventos</h2>
           <ContentEvents>
             <img src={CallMeet} alt="Call no meet da Tech girls"/>

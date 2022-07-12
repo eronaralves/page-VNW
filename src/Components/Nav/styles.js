@@ -66,6 +66,11 @@ export const List = styled.ul`
     cursor: pointer;
   }
 
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   li:hover {
     opacity: .5;
     transition: all .3s;
