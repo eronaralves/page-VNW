@@ -5,8 +5,7 @@ import BackgroundHeader from "../../assets/background.png"
 
 export const Container = styled.header`
   width: 100%;
-  height: 90vh;
-
+  height: 100vh;
   
   background-image: url(${BackgroundHeader});
   background-position: top;
@@ -24,7 +23,7 @@ export const Content = styled.div`
   margin: 0 auto;
 
   h1 {
-    font-size: 55px;
+    font-size: 48px;
     font-weight: 800;
     color: #FFAC2D;
 
@@ -49,7 +48,6 @@ export const Content = styled.div`
 
     h1 {
       font-size: 36px;
-      
     }
   }
 
@@ -92,7 +90,6 @@ export const ContainerSbscription = styled.div`
 
       a {
         font-size: 18px;
-
       }
     }
 
@@ -103,17 +100,16 @@ export const Subscription = styled.div`
   width: 100%;
   max-width: 520px;
 
-  background-color: #fff;
-
   padding-inline: 15px;
   padding-block: 10px;
 
   border-radius: 15px;
+  background-color: #fff;
 
   h2 {
     font-size: 32px;
-    color: #00145D;
     margin-top: 15px;
+    color: #00145D;
   }
 
   hr {
@@ -126,11 +122,14 @@ export const Subscription = styled.div`
 
   & > span {
     display: block;
+
     font-size: 20px;
     font-weight: 500;
-    color: #272727;
+
     margin-top: 10px;
     margin-bottom: 12px;
+
+    color: #272727;
   }
 
   @media(max-width: 500px) {
@@ -149,13 +148,14 @@ export const Subscription = styled.div`
 export const MarkingSubscription = styled.div`
   display: flex;
   align-items: flex-start;
+
   gap: 5px;
   margin-bottom: 10px;
-
 
   span {
     width: 9px;
     height: 9px;
+    
     display: block;
     border-radius: 20px;
     background-color: #00145D;

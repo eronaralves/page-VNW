@@ -2,14 +2,14 @@ import React from "react";
 import {Content} from "../../global"
 
 // icons
-import {TbBrandMedium, TbBrandYoutube, TbBrandInstagram, TbBrandLinkedin} from "react-icons/tb"
-import {AiOutlineFacebook, AiOutlineMedium, AiFillLinkedin, AiOutlineInstagram, AiFillYoutube, AiFillFacebook} from "react-icons/ai"
+import { AiOutlineMedium, AiFillLinkedin, AiOutlineInstagram, AiFillYoutube, AiFillFacebook} from "react-icons/ai"
 
 // Styles
 import {
   ContainerFooter,
   BoxContact,
-  Contact
+  Contact,
+  BoxIconContact
 } from "./styles"
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
           <h2>Contato</h2>
           <Contact>
             <p>Siga nossas redes sociais e fique conectado com todas as novidades.</p>
-            <div>
+            <BoxIconContact>
               <a href="https://www.facebook.com/vainaweb" target="_blank"><AiFillFacebook color="#0166E1"/></a>
 
               <a href="https://www.instagram.com/vainaweb/" target="_blank"><AiOutlineInstagram color="#8433B7"/></a>
@@ -31,7 +31,7 @@ export default function Footer() {
               <a href="https://medium.com/@olavainaweb" target="_blank"><AiOutlineMedium color="#110F0E"/></a>
 
               <a href="/"><AiFillYoutube color="#E81918"/></a>
-            </div>
+            </BoxIconContact>
           </Contact>
         </BoxContact>
       </Content>

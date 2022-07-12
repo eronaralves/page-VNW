@@ -9,7 +9,6 @@ export const ContainerTeam = styled.div`
   }
 
   &:hover {
-
     & > span {
       position: absolute;
       height: 100%;

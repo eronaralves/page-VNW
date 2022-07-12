@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { TeamData } from "../../ultis";
 import { Content} from "../../global"
 
@@ -47,6 +47,7 @@ export default function Home() {
       <Header>
         <Nav/>
       </Header>
+
       <Content>
         <ContainerAbout>
           <BoxLogo>
@@ -95,16 +96,17 @@ export default function Home() {
         </ContainerTeam>
 
         <ContainerEvents>
-        <h2>Eventos</h2>
-        <ContentEvents>
-          <img src={CallMeet} alt="Call no meet da Tech girls"/>
-          <TechGirls>
-            <h3>Tech Girls</h3>
-            <p>Com o objetivo de promover network entre mulheres de tecnologia, conectar talentos femininos com oportunidades no mercado da tecnologia, oferecer experiências de troca através de eventos com mulheres que já têm experiência no mercado da tecnologia, acelerar os talentos com ajuda para custeio de luz e internet para facilitar o processo de estudo, promover mentoria para as participantes do grupo.</p>
-          </TechGirls>
-        </ContentEvents>
-      </ContainerEvents>
+          <h2>Eventos</h2>
+          <ContentEvents>
+            <img src={CallMeet} alt="Call no meet da Tech girls"/>
+            <TechGirls>
+              <h3>Tech Girls</h3>
+              <p>Com o objetivo de promover network entre mulheres de tecnologia, conectar talentos femininos com oportunidades no mercado da tecnologia, oferecer experiências de troca através de eventos com mulheres que já têm experiência no mercado da tecnologia, acelerar os talentos com ajuda para custeio de luz e internet para facilitar o processo de estudo, promover mentoria para as participantes do grupo.</p>
+            </TechGirls>
+          </ContentEvents>
+        </ContainerEvents>
       </Content>
+      
       <Footer/>
     </Container>
   )

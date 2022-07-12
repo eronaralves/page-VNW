@@ -28,13 +28,13 @@ export const BoxContact = styled.div`
 
   @media(max-width: 550px) {
     height: 350px;
-   
   }
 `
 
 export const Contact = styled.div`
   display: flex;
   flex-wrap: wrap;
+
   gap: 32px;
   margin-top: 60px;
 
@@ -44,6 +44,12 @@ export const Contact = styled.div`
     line-height: 22px;
     font-weight: 700;
   }
+  
+`
+
+export const BoxIconContact = styled.div`
+  display: flex;
+  gap: 10px;
 
   svg {
     cursor: pointer;
@@ -60,8 +66,6 @@ export const Contact = styled.div`
     svg {
       font-size: 50px;
     }
-   
+    
   }
-
-  
 `

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  height: 100vh;
 `
 
 export const ContainerAbout = styled.section`
@@ -19,6 +20,7 @@ export const ContainerAbout = styled.section`
 
 export const BoxLogo = styled.div`
   margin-block: 20px;
+
   img {
     width: 400px;
   }
@@ -34,10 +36,8 @@ export const BoxLogo = styled.div`
   }
 
   @media(max-width: 400px) {
-
     img {
       width: 220px;
-
     }
   }
 
@@ -47,10 +47,10 @@ export const ContentAbout = styled.div`
   width: 100%;
   max-width: 600px;
   height: 570px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 
   h2 {
     font-size: 32px;
@@ -78,7 +78,6 @@ export const ContentAbout = styled.div`
 `
 
 export const TextAbout = styled.div`
-  
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -108,6 +107,7 @@ export const ContainerFormation = styled.section`
 
 export const ContentFormation = styled.div`
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -124,7 +124,6 @@ export const BoxCodePage = styled.div`
 
   @media(max-width: 1048px) {
     width: 100%;
-
     margin-top: 52px;
 
     img {
@@ -187,21 +186,23 @@ export const ContainerBackgroundInput = styled.div`
 
 export const BoxInput = styled.div`
   height: 25px;
-  background-color: #0F2260;
-  border: solid 1px #fff;
+
   display: flex;
   align-items: center;
-  color: #fff;
   
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: #0F2260;
 
   input {
     height: 100%;
-    border: none;
+
     font-size: 16px;
+    border: none;
+    padding: 8px;
+
     color: #fff;
     background-color: #0F2260;
-    height: 100%;
-    padding: 8px;
   }
 
   img {
@@ -210,24 +211,20 @@ export const BoxInput = styled.div`
 
   @media(max-width: 635px) {
     justify-content: center;
-    
   }
 `
 
 export const TeamPhotos = styled.div`
   display: flex;
-  flex: 1;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 12px;
 
   @media(max-width: 635px) {
-    
     justify-content: center;
   }
 `
 
 export const ContainerEvents = styled.section`
-
   margin-top: 120px;
 
   & > h2 {
@@ -248,6 +245,7 @@ export const ContainerEvents = styled.section`
 
 export const ContentEvents = styled.div`
   width: 100%;
+  
   display: flex;
   align-items: center;
   margin-bottom: 100px;
