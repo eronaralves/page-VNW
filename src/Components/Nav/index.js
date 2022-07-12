@@ -21,6 +21,29 @@ import LogoVNW from "../../assets/images/logo-vnw.png"
 export default function Nav() {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
 
+  const menusItems = [
+    {
+      label: "Sobre",
+      id: "#about"
+    },
+    {
+      label: "Formação",
+      id: "#formation"
+    },
+    {
+      label: "Equipe",
+      id: "#teams"
+    },
+    {
+      label: "Eventos",
+      id: "#events"
+    },
+    {
+      label: "Contatos",
+      id: "#footer"
+    }
+  ]
+
   return (
     <Container>
       <MenuMobile className={menuMobileOpen ? "isOpen" : ""}>
@@ -29,11 +52,9 @@ export default function Nav() {
             <AiOutlineClose size={35} onClick={() => {setMenuMobileOpen(false)}}/>
           </div>
           <ListMenuMobile>
-            <li>Sobre</li>
-            <li>Formação</li>
-            <li>Equipe</li>
-            <li>Eventos</li>
-            <li>Contatos</li>
+            {menusItems.map(item => (
+              <li><AnchorLink href={item.id} onClick={() => {setMenuMobileOpen(false)}}>{item.label}</AnchorLink></li>
+            ))}
           </ListMenuMobile>
         </ContentMenuMobile>
       </MenuMobile>
@@ -41,11 +62,9 @@ export default function Nav() {
       <Content>
         <img src={LogoVNW} alt="Logo Vai Na Web"/>
           <List>
-            <li><AnchorLink href="#about">Sobre</AnchorLink></li>
-            <li><AnchorLink href="#formations">Formação</AnchorLink></li>
-            <li><AnchorLink href="#teams">Equipe</AnchorLink></li>
-            <li><AnchorLink href="#events">Eventos</AnchorLink></li>
-            <li><AnchorLink href="#footer">Contatos</AnchorLink></li>
+            {menusItems.map(item => (
+              <li><AnchorLink href={item.id} onClick={() => {setMenuMobileOpen(false)}}>{item.label}</AnchorLink></li>
+            ))}
           </List>
           <IoMenu size={30} onClick={() => {setMenuMobileOpen(true)}}/>
       </Content>

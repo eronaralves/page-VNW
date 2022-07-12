@@ -70,7 +70,7 @@ export const Content = styled.div`
 `
 
 export const ContainerSbscription = styled.div`
-  margin-top: 48px;
+  padding-top: 48px;
 
   & > strong {
     display: block;

@@ -103,7 +103,7 @@ export const ContainerFormation = styled.section`
   display: flex;
   align-items: center;
 
-  margin-top: 50px;
+  padding-block: 50px;
 
 `
 
@@ -154,7 +154,7 @@ export const TextFormation = styled.div`
 `
 
 export const ContainerTeam = styled.div`
-  margin-top: 150px;
+  padding-top: 100px;
 
   & > h2 {
     font-size: 32px;
@@ -227,7 +227,7 @@ export const TeamPhotos = styled.div`
 `
 
 export const ContainerEvents = styled.section`
-  margin-top: 120px;
+  padding-top: 120px;
 
   & > h2 {
     width: 100%;
