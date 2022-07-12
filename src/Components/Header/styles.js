@@ -5,7 +5,7 @@ import BackgroundHeader from "../../assets/background.png"
 
 export const Container = styled.header`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 
   
   background-image: url(${BackgroundHeader});
@@ -31,6 +31,16 @@ export const Content = styled.div`
     span {
       color: #FF611E;
       font-weight: 300;
+    }
+  }
+
+  @media(max-width: 1420px) {
+    padding-inline: 25px;
+  }
+
+  @media(max-width: 910px) {
+    h1 {
+      font-size: 45px;
     }
   }
 `

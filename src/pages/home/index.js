@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { TeamData } from "../../ultis";
+import { Content} from "../../global"
 
 // Styles
 import {
   Container,
-  Content,
   ContainerAbout,
   BoxLogo,
   ContentAbout,
@@ -27,6 +27,7 @@ import Header from "../../Components/Header"
 import Nav from "../../Components/Nav";
 import Formation from "../../Components/Formation";
 import Team from "../../Components/Team"
+import Footer from "../../Components/Footer";
 
 // Images
 import LogoVNW from "../../assets/logo-vnw.png"
@@ -101,6 +102,7 @@ export default function Home() {
         </ContentEvents>
       </ContainerEvents>
       </Content>
+      <Footer/>
     </Container>
   )
 }

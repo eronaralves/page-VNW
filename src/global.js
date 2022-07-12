@@ -19,3 +19,14 @@ export const Container = styled.div`
 
   font-family: "Montserrat", sans-serif;
 `
+
+export const Content = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  margin-inline: auto;
+
+
+  @media(max-width: 1420px) {
+    padding-inline: 25px;
+  }
+`

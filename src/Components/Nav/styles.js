@@ -23,6 +23,9 @@ export const Content = styled.div`
     height: auto;
   }
 
+  @media(max-width: 1420px) {
+    padding-inline: 25px;
+  }
   
 `
 

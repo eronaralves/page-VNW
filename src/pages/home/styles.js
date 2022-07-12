@@ -1,22 +1,7 @@
 import styled from "styled-components";
 
-// Images
-import CallMeet from "../../assets/call-meet.png"
-
 export const Container = styled.div`
   width: 100%;
-  
-`
-
-export const Content = styled.div`
-  width: 100%;
-  max-width: 1300px;
-  margin-inline: auto;
-
-
-  @media() {
-    
-  }
 `
 
 export const ContainerAbout = styled.section`
@@ -72,7 +57,6 @@ export const TextAbout = styled.div`
 
 export const ContainerFormation = styled.section`
   width: 100%;
-  height: 570px;
 
   display: flex;
   align-items: center;
@@ -96,7 +80,6 @@ export const BoxCodePage = styled.div`
   img {
     width: 100%;
     height: 100%;
-    display: inline-block;
   }
 `
 
@@ -193,9 +176,17 @@ export const ContentEvents = styled.div`
   height: 600px;
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 
   img {
     width: 80%;
+  }
+
+  @media(max-width: 1165px) {
+
+    img {
+      width: 70%;
+    }
   }
 
 `
