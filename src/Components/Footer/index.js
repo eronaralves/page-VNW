@@ -35,7 +35,7 @@ export default function Footer() {
 
               <a href="https://medium.com/@olavainaweb" target="_blank"><img src={Medium}/></a>
 
-              <a href="/"><img src={Youtube}/></a>
+              <a href="https://www.youtube.com/channel/UCzUldn76ZB0b-g6WOij9m3w" target="_blank"><img src={Youtube}/></a>
             </BoxIconContact>
           </Contact>
         </BoxContact>

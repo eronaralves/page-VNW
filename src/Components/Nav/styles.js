@@ -28,7 +28,7 @@ export const Content = styled.div`
 
   svg {
     display: none;
-    margin-inline:  auto 0;
+    margin-inline: auto 0;
   }
 
   @media(max-width: 1420px) {
@@ -68,7 +68,7 @@ export const List = styled.ul`
 
   a {
     text-decoration: none;
-    color: #fff;
+     color: #fff;
   }
 
   li:hover {
@@ -137,7 +137,7 @@ export const ListMenuMobile = styled.ul`
 
   a {
     text-decoration: none;
-    color: #fff;
+     color: #fff;
   }
 
   li:hover {

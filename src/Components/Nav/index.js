@@ -28,7 +28,7 @@ export default function Nav() {
     },
     {
       label: "Formação",
-      id: "#formation"
+      id: "#formations"
     },
     {
       label: "Equipe",
@@ -52,8 +52,8 @@ export default function Nav() {
             <AiOutlineClose size={35} onClick={() => {setMenuMobileOpen(false)}}/>
           </div>
           <ListMenuMobile>
-            {menusItems.map(item => (
-              <li><AnchorLink href={item.id} onClick={() => {setMenuMobileOpen(false)}}>{item.label}</AnchorLink></li>
+            {menusItems.map((item, index) => (
+              <li key={index}><AnchorLink href={item.id} onClick={() => {setMenuMobileOpen(false)}}>{item.label}</AnchorLink></li>
             ))}
           </ListMenuMobile>
         </ContentMenuMobile>
@@ -62,8 +62,8 @@ export default function Nav() {
       <Content>
         <img src={LogoVNW} alt="Logo Vai Na Web"/>
           <List>
-            {menusItems.map(item => (
-              <li><AnchorLink href={item.id} onClick={() => {setMenuMobileOpen(false)}}>{item.label}</AnchorLink></li>
+            {menusItems.map((item, index)  => (
+              <li key={index}><AnchorLink href={item.id} onClick={() => {setMenuMobileOpen(false)}}>{item.label}</AnchorLink></li>
             ))}
           </List>
           <IoMenu size={30} onClick={() => {setMenuMobileOpen(true)}}/>
