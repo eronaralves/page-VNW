@@ -4,13 +4,15 @@ export const Container = styled.nav`
   width: 100%;
 
   display: flex;
-  justify-content: center;
+
 `
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 1300px;
+  max-width: 1450px;
   height: 70px;
+ 
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -21,10 +23,12 @@ export const Content = styled.div`
   img {
     width: 55px;
     height: auto;
+    position: fixed;
   }
 
   svg {
     display: none;
+    margin-inline:  auto 0;
   }
 
   @media(max-width: 1420px) {
@@ -44,15 +48,20 @@ export const Content = styled.div`
 `
 
 export const List = styled.ul`
+  width: 1300px;
   display: flex;
-  gap: 65px;
+  justify-content: end;
+  align-items: center;
+  gap: 53px;
+
 
   list-style: none;
   color: #fff;
 
   li {
     font-size: 16px;
-    line-height: 30px;
+    padding-block: 2px;
+    padding-inline: 15px;
     font-weight: 400;
     cursor: pointer;
   }
@@ -72,8 +81,7 @@ export const MenuMobile = styled.div`
   height: 100vh;
 
   position: fixed;
-
-  z-index: 2;
+  z-index: 3;
 
   visibility: hidden;
   right: -100%;
@@ -95,6 +103,7 @@ export const MenuMobile = styled.div`
 export const ContentMenuMobile = styled.div`
   padding: 0 20px;
   text-align: center;
+
 
   .content-header {
     display: flex;

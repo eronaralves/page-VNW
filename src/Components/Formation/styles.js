@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 500px;
   display: flex;
+  align-items: start;
   gap: 31px;
  
   img {
@@ -12,8 +13,9 @@ export const Container = styled.div`
   }
 
   @media(max-width: 490px) {
-    display: flex;
-    flex-wrap: wrap;
+    img {
+      width: 70px;
+    }
   }
 `
 
@@ -36,6 +38,14 @@ export const TextFormation = styled.div`
 
   @media(max-width: 490px) {
     text-align: left;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 10px;
+    }
   }
 
 `

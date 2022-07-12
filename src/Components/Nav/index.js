@@ -36,6 +36,7 @@ export default function Nav() {
           </ListMenuMobile>
         </ContentMenuMobile>
       </MenuMobile>
+      
       <Content>
         <img src={LogoVNW} alt="Logo Vai Na Web"/>
           <List>

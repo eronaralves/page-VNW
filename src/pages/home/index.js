@@ -36,6 +36,7 @@ import IconComputer from "../../assets/icon.computer.svg"
 import IconSearch from "../../assets/icon-search.svg"
 import CallMeet from "../../assets/call-meet.png"
 
+
 export default function Home() {
   const [teamData, setTeamData] = useState(TeamData)
   const [input, setInput] = useState("")

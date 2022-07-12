@@ -51,20 +51,21 @@ export const BoxIconContact = styled.div`
   display: flex;
   gap: 10px;
 
-  svg {
+  img {
     cursor: pointer;
-    font-size: 60px;
+    width: 50px;
+    color: #fff;
   }
 
-  svg:hover {
+  img:hover {
     opacity: .7;
   }
 
   @media(max-width: 450px) {
     margin-top: 30px;
 
-    svg {
-      font-size: 50px;
+    img {
+      width: 45px;
     }
     
   }
