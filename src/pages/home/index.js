@@ -38,6 +38,9 @@ import CallMeet from "../../assets/call-meet.png"
 
 export default function Home() {
   const [teamData, setTeamData] = useState(TeamData)
+  const [input, setInput] = useState("")
+
+  const filtro = teamData.filter((item) => (item.name.toLowerCase().includes(input.toLowerCase())))
 
   return (
     <Container>
@@ -79,13 +82,13 @@ export default function Home() {
           <h2>Equipe</h2>
           <ContainerBackgroundInput>
             <BoxInput>
-              <input type="text" placeholder="Pesquisar..."/>
+              <input type="text" placeholder="Pesquisar..." value={input} onChange={e => setInput(e.target.value)}/>
               <img src={IconSearch} alt="Icon de pesquisar"/>
             </BoxInput>
           </ContainerBackgroundInput>
 
           <TeamPhotos>
-            {teamData.map(item => (
+            {filtro.map(item => (
               <Team name={item.name} image={item.image} post={item.post}/>
             ))}
           </TeamPhotos>
