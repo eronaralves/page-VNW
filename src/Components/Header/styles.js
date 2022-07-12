@@ -61,6 +61,7 @@ export const Content = styled.div`
 
   @media(max-width: 400px) {
     padding-inline: 20px;
+    margin-block: 32px;
   }
 
   @media(max-width: 360px) {
