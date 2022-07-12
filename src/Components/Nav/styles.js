@@ -17,14 +17,28 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-
+  color: #fff;
   img {
     width: 55px;
     height: auto;
   }
 
+  svg {
+    display: none;
+  }
+
   @media(max-width: 1420px) {
     padding-inline: 25px;
+  }
+
+  @media(max-width: 810px) {
+    svg {
+      display: block;
+    }
+  }
+
+  @media(max-width: 400px) {
+    padding-inline: 20px;
   }
   
 `
@@ -48,5 +62,9 @@ export const List = styled.ul`
     opacity: .5;
     transition: all .3s;
   } 
+
+  @media(max-width: 810px) {
+    display: none;
+  }
   
 `

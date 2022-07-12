@@ -43,6 +43,31 @@ export const Content = styled.div`
       font-size: 45px;
     }
   }
+
+  @media(max-width: 540px) {
+    height: calc(70% - 70px);
+
+    h1 {
+      font-size: 36px;
+      
+    }
+  }
+
+  @media(max-width: 500px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media(max-width: 400px) {
+    padding-inline: 20px;
+  }
+
+  @media(max-width: 360px) {
+    h1 {
+      font-size: 25px;
+    }
+  }
 `
 
 export const ContainerSbscription = styled.div`
@@ -56,6 +81,18 @@ export const ContainerSbscription = styled.div`
       font-weight: 300;
       color: #FED5B2;
       text-decoration: none;
+    }
+  }
+
+  @media(max-width: 500px) {
+    strong {
+      font-size: 17px;
+      line-height: 28px;
+
+      a {
+        font-size: 18px;
+
+      }
     }
 
   }
@@ -93,6 +130,18 @@ export const Subscription = styled.div`
     color: #272727;
     margin-top: 10px;
     margin-bottom: 12px;
+  }
+
+  @media(max-width: 500px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  @media(max-width: 370px) {
+    h2 {
+      font-size: 25px;
+    }
   }
 `
 

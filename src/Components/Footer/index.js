@@ -21,11 +21,13 @@ export default function Footer() {
           <h2>Contato</h2>
           <Contact>
             <p>Siga nossas redes sociais e fique conectado com todas as novidades.</p>
-            <AiFillFacebook size={60} color="#000DF7"/>
-            <AiOutlineInstagram size={60} color="#8433B7"/>
-            <AiFillLinkedin size={60} color="#006397"/>
-            <AiOutlineMedium size={60} color="#110F0E"/>
-            <AiFillYoutube size={60} color="#E81918"/>
+            <div>
+              <AiFillFacebook color="#0166E1"/>
+              <AiOutlineInstagram color="#8433B7"/>
+              <AiFillLinkedin color="#006397"/>
+              <AiOutlineMedium color="#110F0E"/>
+              <AiFillYoutube color="#E81918"/>
+            </div>
           </Contact>
         </BoxContact>
       </Content>

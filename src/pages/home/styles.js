@@ -12,12 +12,33 @@ export const ContainerAbout = styled.section`
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media(max-width: 1048px) {
+    margin-block: 60px;
+  }
 `
 
 export const BoxLogo = styled.div`
-
+  margin-block: 20px;
   img {
     width: 400px;
+  }
+
+  @media(max-width: 650px) {
+    width: 100%;
+    display: flex;
+
+    img {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  @media(max-width: 400px) {
+
+    img {
+      width: 220px;
+
+    }
   }
 
 `
@@ -29,7 +50,7 @@ export const ContentAbout = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
 
   h2 {
     font-size: 32px;
@@ -39,18 +60,40 @@ export const ContentAbout = styled.div`
     color: #0F2260;
   }
 
+  @media(max-width: 1048px) {
+    h2 {
+      text-align: left;
+    }
+  }
+
+  @media(max-width: 560px) {
+    margin-block: 14px;
+  }
+
+  @media(max-width: 370px) {
+    margin-block: 100px;
+  }
+
+  
 `
 
 export const TextAbout = styled.div`
   
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
   p {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+  }
+
+  @media(max-width: 540px) {
+    p {
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
   
 `
@@ -60,8 +103,6 @@ export const ContainerFormation = styled.section`
 
   display: flex;
   align-items: center;
-
-  margin-top: 18px;
 
 `
 
@@ -73,13 +114,23 @@ export const ContentFormation = styled.div`
 
 `
 
-
 export const BoxCodePage = styled.div`
   width: 50%;
 
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media(max-width: 1048px) {
+    width: 100%;
+
+    margin-top: 52px;
+
+    img {
+    width: 100%;
+    height: auto;
+  }
   }
 `
 
@@ -102,12 +153,17 @@ export const TextFormation = styled.div`
 `
 
 export const ContainerTeam = styled.div`
-  
+  margin-top: 150px;
+
   & > h2 {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 23px;
     color: #0F2260;
+  }
+
+  @media(max-width: 400px) {
+    margin-top: 80px;
   }
 `
 
@@ -122,6 +178,11 @@ export const ContainerBackgroundInput = styled.div`
   margin-bottom: 20px;
   
   background-color: #0F2260;
+
+  @media(max-width: 635px) {
+    padding-inline: 20px;
+    
+  }
 `
 
 export const BoxInput = styled.div`
@@ -146,6 +207,11 @@ export const BoxInput = styled.div`
   img {
     width: 25px;
   }
+
+  @media(max-width: 635px) {
+    justify-content: center;
+    
+  }
 `
 
 export const TeamPhotos = styled.div`
@@ -153,6 +219,11 @@ export const TeamPhotos = styled.div`
   flex: 1;
   gap: 12px;
   flex-wrap: wrap;
+
+  @media(max-width: 635px) {
+    
+    justify-content: center;
+  }
 `
 
 export const ContainerEvents = styled.section`
@@ -169,11 +240,14 @@ export const ContainerEvents = styled.section`
     color: #0F2260;
   }
 
+  @media(max-width: 400px) {
+    margin-top: 80px;
+  }
+
 `
 
 export const ContentEvents = styled.div`
   width: 100%;
-  height: 600px;
   display: flex;
   align-items: center;
   margin-bottom: 100px;
@@ -189,11 +263,20 @@ export const ContentEvents = styled.div`
     }
   }
 
+  @media(max-width: 988px) {
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+    }
+  }
+
 `
 
 export const TechGirls = styled.div`
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
+
+  margin-top: 32px;
 
   h3 {
     font-size: 25px;

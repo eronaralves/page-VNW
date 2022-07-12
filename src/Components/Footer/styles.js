@@ -25,10 +25,16 @@ export const BoxContact = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media(max-width: 550px) {
+    height: 350px;
+   
+  }
 `
 
 export const Contact = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   margin-top: 60px;
 
@@ -41,11 +47,20 @@ export const Contact = styled.div`
 
   svg {
     cursor: pointer;
-
+    font-size: 60px;
   }
 
   svg:hover {
     opacity: .7;
+  }
+
+  @media(max-width: 450px) {
+    margin-top: 30px;
+
+    svg {
+      font-size: 50px;
+    }
+   
   }
 
   
