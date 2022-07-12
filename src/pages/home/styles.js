@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+// Images
+import CallMeet from "../../assets/call-meet.png"
+
 export const Container = styled.div`
   width: 100%;
   
@@ -10,6 +13,10 @@ export const Content = styled.div`
   max-width: 1300px;
   margin-inline: auto;
 
+
+  @media() {
+    
+  }
 `
 
 export const ContainerAbout = styled.section`
@@ -39,7 +46,7 @@ export const ContentAbout = styled.div`
   justify-content: center;
   
 
-  h3 {
+  h2 {
     font-size: 32px;
     font-weight: 800;
     text-align: center;
@@ -98,7 +105,7 @@ export const TextFormation = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  & > h3 {
+  & > h2 {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 23px;
@@ -113,7 +120,7 @@ export const TextFormation = styled.div`
 
 export const ContainerTeam = styled.div`
   
-  & > h3 {
+  & > h2 {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 23px;
@@ -127,8 +134,10 @@ export const ContainerBackgroundInput = styled.div`
 
   display: flex;
   align-items: center;
-  
+
+  padding-inline: 85px;
   margin-bottom: 20px;
+  
   background-color: #0F2260;
 `
 
@@ -147,6 +156,8 @@ export const BoxInput = styled.div`
     font-size: 16px;
     color: #fff;
     background-color: #0F2260;
+    height: 100%;
+    padding: 8px;
   }
 
   img {
@@ -154,10 +165,55 @@ export const BoxInput = styled.div`
   }
 `
 
-
 export const TeamPhotos = styled.div`
   display: flex;
   flex: 1;
   gap: 12px;
   flex-wrap: wrap;
+`
+
+export const ContainerEvents = styled.section`
+
+  margin-top: 120px;
+
+  & > h2 {
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 23px;
+    color: #0F2260;
+  }
+
+`
+
+export const ContentEvents = styled.div`
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 80%;
+  }
+
+`
+
+export const TechGirls = styled.div`
+  width: 100%;
+  max-width: 700px;
+
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    color: #0F2260;
+  }
+  
+  p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+  }
 `

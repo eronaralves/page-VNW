@@ -16,7 +16,10 @@ import {
   TeamPhotos,
   ContainerTeam,
   ContainerBackgroundInput,
-  BoxInput
+  BoxInput,
+  ContainerEvents,
+  ContentEvents,
+  TechGirls
 } from "./styles"
 
 // Components
@@ -30,6 +33,7 @@ import LogoVNW from "../../assets/logo-vnw.png"
 import CodePage from "../../assets/code-page.png"
 import IconComputer from "../../assets/icon.computer.svg"
 import IconSearch from "../../assets/icon-search.svg"
+import CallMeet from "../../assets/call-meet.png"
 
 export default function Home() {
   const [teamData, setTeamData] = useState(TeamData)
@@ -45,7 +49,7 @@ export default function Home() {
             <img src={LogoVNW} alt="Logo Vai na Web" />
           </BoxLogo>
           <ContentAbout>
-            <h3>Sobre o Vai na Web</h3>
+            <h2>Sobre o Vai na Web</h2>
             <TextAbout>
               <p>Fundado em 2017, no Complexo do Alemão, o Vai na Web vem impactando e transformando a vida de jovens das classes C, D e E do Rio de Janeiro e de outros 18 estados do Brasil.</p>
 
@@ -59,7 +63,7 @@ export default function Home() {
         <ContainerFormation>
           <ContentFormation>
             <TextFormation>
-              <h3>Formação</h3>
+              <h2>Formação</h2>
               <Formation title="FRONT-END" text="Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface gráfica e, normalmente, com as tecnologias base da Web: HTML, CSS e JavaScript." icon={IconComputer}/>
 
               <Formation title="BACK-END" text="O Back-End trabalha em boa parte dos casos fazendo a ponte entre os dados que vem do navegador rumo ao banco de dados e vice-versa, sempre aplicando as devidas regras de negócio, validações e garantias num ambiente restrito ao usuário final (ou seja, onde ele não consegue acessar ou manipular algo)." icon={IconComputer}/>
@@ -71,7 +75,7 @@ export default function Home() {
         </ContainerFormation>
 
         <ContainerTeam>
-          <h3>Equipe</h3>
+          <h2>Equipe</h2>
           <ContainerBackgroundInput>
             <BoxInput>
               <input type="text" placeholder="Pesquisar..."/>
@@ -85,6 +89,17 @@ export default function Home() {
             ))}
           </TeamPhotos>
         </ContainerTeam>
+
+        <ContainerEvents>
+        <h2>Eventos</h2>
+        <ContentEvents>
+          <img src={CallMeet} alt="Call no meet da Tech girls"/>
+          <TechGirls>
+            <h3>Tech Girls</h3>
+            <p>Com o objetivo de promover network entre mulheres de tecnologia, conectar talentos femininos com oportunidades no mercado da tecnologia, oferecer experiências de troca através de eventos com mulheres que já têm experiência no mercado da tecnologia, acelerar os talentos com ajuda para custeio de luz e internet para facilitar o processo de estudo, promover mentoria para as participantes do grupo.</p>
+          </TechGirls>
+        </ContentEvents>
+      </ContainerEvents>
       </Content>
     </Container>
   )
